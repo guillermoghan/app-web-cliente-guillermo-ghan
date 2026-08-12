@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda - Ecommerce</title>
+    <meta name="description" content="Tienda online con los mejores productos destacados.">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <span>Mi Tienda</span>
+            </a>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#filtros">Filtros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="filtros" aria-label="Filtros de productos">
+            <h2>Filtrar productos</h2>
+            <form>
+                <fieldset>
+                    <legend>Categoría</legend>
+                    <label>
+                        <input type="radio" name="categoria" value="tecnologia">
+                        Tecnología
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="ropa">
+                        Ropa
+                    </label>
+                    <label>
+                        <input type="radio" name="categoria" value="hogar">
+                        Hogar
+                    </label>
+                </fieldset>
+
+                <label for="precio-max">Precio máximo</label>
+                <input type="number" id="precio-max" name="precio-max" min="0" placeholder="1000">
+
+                <button type="submit">Aplicar filtros</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+
+        <section id="productos" aria-label="Productos destacados">
+            <h1>Productos destacados</h1>
+
+            <article>
+                <h2>Producto 1</h2>
+                <p>Descripción breve del producto destacado.</p>
+                <p><strong>Precio:</strong> $29.999</p>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <h2>Producto 2</h2>
+                <p>Descripción breve del producto destacado.</p>
+                <p><strong>Precio:</strong> $49.999</p>
+                <button type="button">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <h2>Producto 3</h2>
+                <p>Descripción breve del producto destacado.</p>
+                <p><strong>Precio:</strong> $19.999</p>
+                <button type="button">Agregar al carrito</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
